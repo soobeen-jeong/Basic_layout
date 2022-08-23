@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0;}
+        body {background: #ccc;
+            height: 500px;}
+            /*부모의 높이가 있어야지만 자식 높이 100% 쓸 수 있다*/
+        header {background: #f00;
+            position: fixed; /*공중부양된 상태*/
+            top: 0; left: 0; 
+            width: 150px;
+            height: 100%;} /*좌표는 필수*/
+        main {
+            margin: 10px 10px 10px 160px;
+        }
+    main > div {margin-bottom: 10px;} /* main 집계 자식 */
+    .box1, .box3, .box4, .box7 {
+        height: 100px;
+        background: #fff;
+    }
+
+            /* 
+            1. 정렬(Float)
+            2. 해제
+            3. 위드,높이,여백
+            4.마지막자식
+             */
+
+    .box2 {overflow: hidden; /* oh */
+            margin-top: 10px;}
+    .box2 div {float: left;
+                width: calc(50% - 5px);
+                background: #fff;
+                height: 100px;}
+    .box2 div:last-child {float: right;}
+
+    .box5 {overflow: hidden;}
+    .box5 div {float: left;
+        height: 100px;
+        background: #fff;
+        width: calc(80% - 5px);}
+            
+    .box5 div:last-child {float: right;
+        width: calc(20% - 5px);}
+        /* 태그 점수
+        
+         */
+    .box6 {overflow: hidden;}
+    .box6 div {float: left;
+        height: 100px;
+        background: #fff;
+        width: calc(30% - 5px);}
+            
+    .box6 div:last-child {float: right;
+        width: calc(70% - 5px);}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="box1">box</div>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box3">box</div>
+        <div class="box4">box</div>
+        <div class="box5">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box6">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box7">box</div>
+    </main>
+</body>
+</html>

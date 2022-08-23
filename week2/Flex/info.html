@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {list-style: none;}
+        .list1 {display: flex;}
+        .list1 li{width: 300px; height: 100px; 
+            background: #f00;  margin: 10px;
+               /*수축 기본 */
+            
+            flex-grow: 1; }
+
+                
+        .list1 li:last-child{flex-grow: 2;} 
+        /* 300px 넘쳤을떄 */
+        
+        .list2 {display: flex;}
+        .list2 li {
+            width: 300px; height: 100px; 
+            background: #f00;  margin: 10px;
+
+            flex-shrink: 1;
+        }
+        .list2:last-child {flex-shrink: 0;}
+
+        .list3 {display: flex;}
+        .list3 li{
+            height: 100px;
+            background: #f00;
+            margin: 10px;
+            flex-basis: 300px;
+            /* width height 둘다 가능 */
+        }
+        .list3 .list2:last-child{}
+        
+
+        .list4 {display: flex;}
+        .list4 li{
+            height: 100px;
+            background: #00f;
+            margin: 10px;
+            /* flex: 1 0 500px; */
+            flex: 1;
+        }
+        .list4 .list2:last-child{}
+        .list4 {}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>flex-grow</h2>
+        <p>증가의 비율</p>
+        <ul class="list1">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>flex-shrink</h2>
+        <p>수축의 비율</p>
+        <ul class="list2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>flex-basis</h2>
+        <p>중심축 기본값</p>
+        <ul class="list3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>flex:grow shrink basis</h2>
+        <p>주로 flex:1 자주쓰임 -> flex-grow:1, width:100% 같은말</p>
+        <ul class="list4">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+</body>
+</html>

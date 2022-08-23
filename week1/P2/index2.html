@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        body {background: #000;}
+        main {margin: 100px auto; padding: 10px; background: #ccc; width: 800px; }
+        main > div {margin-bottom: 10px;  }
+        .box7 div:last-child {margin-bottom: 0;}
+        .box1 {height: 250px; background: #fff;} 
+        .box3, .box4, .box7 {height: 100px; background: #fff;}
+        .box2 {overflow: hidden;}
+        .box2 div {
+            float: left;
+            width: calc(50% - 5px);
+            background: #fff;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .box2 div:last-child {margin-right: 0;}
+
+        .box5 {overflow: hidden;}
+        .box5 div {
+            float: left;
+            width: calc(50% - 5px);
+            background: #fff;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .box5 div:last-child {margin-right: 0;}
+
+        .box6 {overflow: hidden;}
+        .box6 div {
+            float: left;
+            width: calc(50% - 5px);
+            background: #fff;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .box6 div:last-child { margin-right: 0;}
+        
+        /* 질문: 마지막 bottom :last-child 적용하였으나 적용안되고 두꺼운 이유 - 해결방법?  */
+        
+        
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="box1">box</div>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box3">box</div>
+        <div class="box4">box</div>
+        <div class="box5">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box6">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box7">box</div>
+    </main>
+</body>
+</html>

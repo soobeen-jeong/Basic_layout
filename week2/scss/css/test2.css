@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ccc;
+}
+
+header {
+  height: 100px;
+  background: #f00;
+}
+
+main {
+  width: 800px;
+  margin: 10px auto;
+}
+
+.box1 {
+  height: 200px;
+  background: #f00;
+}
+
+.box2 {
+  display: flex;
+  gap: 10px;
+}
+.box2 div {
+  flex: 1;
+  height: 200px;
+  background: #fff;
+}
+
+.box3 {
+  display: flex;
+}
+.box3 > * + * {
+  margin-left: 10px;
+}
+.box3 div {
+  flex: 1;
+  height: 200px;
+  background: #f00;
+}
+
+.box4 {
+  padding: 10px;
+  background: #00f;
+  display: flex;
+  justify-content: space-between;
+}
+.box4 div {
+  width: calc(50% - 5px);
+  height: 200px;
+  background: #fff;
+}

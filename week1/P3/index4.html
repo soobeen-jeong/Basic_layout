@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0; font: inherit;}
+        body {line-height: 1;}
+        ul {list-style: none;}
+        a {text-decoration: none; color: inherit;}
+        img {display: block;}
+
+        header {}
+        header .top {background: #888; height: 200px; position: relative;}
+        header .logo {position: absolute; top: 50%; left: 50%; 
+            width: 100px; height: 50px; background: #fff;
+            transform: translate(-50%, -50%);
+        }
+        header .logo a {display: block; height: 100%;}
+        header .sns {
+            position: absolute;
+            left: 0;
+            background: #fff; padding: 10px;
+        }
+        header .login {
+            position: absolute;
+            right: 0;
+            background: #fff; padding: 10px;
+        }
+        header .bottom {background: #ccc; text-align: center;}
+        header .bottom ul {overflow: hidden;
+                        vertical-align: top; 
+                        line-height: 50px; 
+                        background: #f00;
+                        display: inline-block;
+                        }
+        header .bottom ul li {
+                        float: left;
+                        padding: 0 10px;
+                         }
+                            
+
+        main {width: 800px; margin: 10px auto;}
+        .box1 {background: #ccc; padding: 10px; margin-bottom: 10px;}
+        .box1 .top {height: 100px; background: #fff; margin-bottom: 10px;}
+        .box1 .bottom {background: #fff; padding: 10px; overflow: hidden;}
+        .box1 .left {float: left; width: calc(100% - 160px); }
+        .box1 .left li {float: left; width:calc((100% - 20px) / 3);
+                        background: #f00; height: 100px; margin-right: 10px; }
+        .box1 .left li:nth-child(3n) {margin-right: 0; }
+        .box1 .left li:nth-child(n+4) {margin-top: 10px; }
+        .box1 .right {float: right; height: 210px; background: #f00; width: 150px;}
+
+        .box2 {background: #ccc; padding: 10px; }
+        .box2 li:last-child {margin-bottom: 0;}
+        .box2 li {margin-bottom: 10px;}
+        .box2 li a {display: block; overflow: hidden;}
+        .box2 li img {float: left; width: 150px; height: 150px;}
+        .box2 li p {float: right; height: 150px; width: calc(100% - 160px); background: #fff;}
+
+        footer {background: #ccc; height: 100px; margin-top: 30px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1 class="logo"><a href="">네이버</a></h1>
+            <div class="sns">sns</div>
+            <div class="login">login</div>
+        </div>
+        <nav class="bottom">
+            <ul>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴2</a></li>
+                <li><a href="">메뉴3</a></li>
+                <li><a href="">메뉴4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="box1">
+            <div class="top"></div>
+            <div class="bottom">
+                <ul class="left">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <div class="right">right</div>
+            </div>
+        </section>
+        <section class="box2">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>내용</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p></p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

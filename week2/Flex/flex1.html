@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body {background: #ccc;}
+        header {height: 100px; background: #000;}
+        main {width: 800px; margin: 10px auto;}
+        main >div{margin-bottom: 10px;}
+        .box1 {height: 200px; background: #fff;}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="box1">box1</div>
+        <!-- gap 방식 -->
+        <style>
+            .box2 {display: flex; gap: 10px;}
+            .box2 div {flex:1;
+                    background: #fff;
+                    height: 200px;}
+        </style>
+        <div class="box2">
+            <div>@</div>
+            <div>@</div>
+            <div>@</div>
+        </div>
+        <!-- 올빼미 방식 -->
+        <style>
+            .box3 {
+                display: flex;
+            }
+            /* 왕따선택자 */
+            .box3 >* + *{
+                margin-left: 10px;
+
+            }
+            .box3 div{
+                flex: 1;
+                height: 100px;
+                background: #fff;
+            }
+        </style>
+        <div class="box3">
+            <div>@</div>
+            <div>@</div>
+            <div>@</div>
+            <div>@</div>
+            <div>@</div>
+        </div>
+        <!--space between 방식 -->
+        <style>
+            .box4 {display: flex; background: #f00; padding: 10px;
+                    justify-content: space-between;}
+            .box4 div{ width: calc(50% - 5px); height: 100px;
+                        background: #fff;}
+            .box4 {}
+        </style>
+        <div class="box4">
+            <div>@</div>
+            <div>@</div>
+        </div>
+    </main>
+</body>
+</html>

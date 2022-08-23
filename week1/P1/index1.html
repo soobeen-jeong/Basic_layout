@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        /* bg#ccc */
+        body {background: #ccc;}
+        header {background: #000;
+                height: 100px;}
+        main {width: 800px;
+             /* background: #f00; */
+             margin: 10px auto;} /*상하 좌우*/
+        .box1 {height: 100px;
+             background: #fff;}
+
+        .box2 { /*플루트해제방법1*/
+            overflow: hidden;
+            margin-top: 10px;}
+        .box2 div {float: left;
+                width: calc((100% - 20px)/3);
+                height: 100px;
+            background: #fff;
+            margin-right: 10px;}
+        .box2 div:last-child{margin-right: 0;}
+
+            /* 
+            1. 정렬(Float)
+            2. 해제
+            3. 위드,높이,여백
+            4.마지막자식
+             */
+
+        .box3 {overflow: hidden;
+            margin-top: 10px;}
+        .box3 div {float: left;
+            width: calc((100% - 40px)/5);
+            height: 100px;
+            background: #fff;
+            margin-right: 10px;}
+        .box3 div:last-child {margin-right: 0;}
+        /* margin-left: 0 가능*/
+
+            
+    </style>
+</head>
+<body>
+    <!-- 시멘틱태그 -->
+    <header>header</header>
+
+    <main>
+        <!-- .box$*4 -->
+        <div class="box1">box1</div>
+        <div class="box2">
+            <!-- .div*3{$} -->
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="box3">
+            <!-- .div*5{$} -->
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+        <style>
+            .box4 {margin-top: 10px;
+                   background: #00f;
+                    padding: 10px;
+                    overflow: hidden; /*높이인식*/}
+            .box4 div {float: left;
+                        width: calc((100% - 10px)/2);
+                        background: #fff;
+                        height: 100px;} 
+                        /*100% = 800px-20px*/
+                        /* width:calc(50% - 5px) */
+            .box4 div:last-child {float: right;}
+        </style>
+
+        <div class="box4">
+            <!-- .div*2{$} -->
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </main>
+</body>
+</html>

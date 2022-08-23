@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0; font: inherit; line-height: 50px; text-align: center; }
+        body {line-height: 1;}
+        ul {list-style: none;}
+        a {text-decoration: none; color: inherit;}
+        img {display: block;}
+
+
+        /*헤더 분리 */
+        header{
+            height: 100px;
+            background: #f00;
+        }
+
+        .box0 {background: #fff; height: 300px; 
+            width: 800px;
+            margin: 0 auto;
+            /* 따로따로 중앙정렬 */
+        }
+        .box0 ul {overflow: hidden; width: 800px;  margin: 10px auto; }
+        .box0 ul li {float: left;
+                           width: calc((100% - 10px)/2);
+                           height: 300px;
+                           background: #555;
+                           margin-right: 10px;
+                           position: relative;                 
+                        }
+        .box0 ul li:last-child {margin-right: 0;}
+        .box0 ul li .btn {position: absolute;
+                    top: 50%; width: 50px; height: 50px; 
+                    background: #fff;
+                    transform: translateY(-50%);
+                    }
+        .box0 ul li .btn.prev {left: 10px;}
+        .box0 ul li .btn.next {right: 10px;}
+
+        .banner {background: #000; height: 100px; margin: 10px auto;  color: #fff;}
+
+        /* main {width: 800px; margin: 10px auto;} */
+        .inner{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .box1 {background: #ccc; padding: 10px; margin-bottom: 10px; /* 밑에만 떨어ㄷ트려줌  */ }
+        .box1 .top {background: #fff; padding: 10px; overflow: hidden;}
+        .box1 .top li {float: left;
+                        width: calc(70% - 5px);
+                        height: 100px;
+                        background: #000;
+                        margin-right: 10px;}
+        .box1 .top ul li:last-child {margin-right: 0px; width: calc(30% - 5px); float: right;}
+        .box1 .bottom {background: #fff; padding: 0 10px 10px 10px; overflow: hidden;}
+        .box1 .bottom ul li {float: left;
+                        width: calc(20% - 5px);
+                        height: 100px;
+                        background: #000;
+                        margin-right: 10px;
+                    }
+        .box1 .bottom ul li:last-child {margin-right: 0px; width: calc(80% - 5px); float: right;}
+
+        .box2 {
+            background: #ccc; 
+            padding: 10px;
+           overflow: hidden; }
+        .box2 h2 {float: left; }
+        .box2 .navi{
+            float: right;
+        }
+        .box2 .navi a{
+            float: left;
+            width: 50px;height: 50px;
+            background: #fff;
+            border: 1px solid #000;
+        }
+        /* css가 엉망이네요 ^^; 잘 모르겠습니다 ㅠㅠㅠ 왜 옆구리가 튀어나왔는지.... 그리고 html도 순서를 바꿨어요 (float:right 쓰려구요ㅠ) */ 
+
+
+
+        /* 부모가 떨어트려줌! */
+        .box3 {overflow: hidden;       margin: 10px 0;}
+        .box3 ul li {float: left; width: calc((100% - 40px)/4);margin-right: 10px;}
+        .box3 ul li:last-child {margin-right: 0;}
+        /* 둘중하나만 주면됩니당 */
+        /* .box3 ul li:nth-child(n-5) {margin-top: 10px;} */
+        .box3 ul li:nth-child(n+5) {margin-top: 10px;}
+        .box3 ul li a {padding: 10px; background: blue; display: block;}
+        .box3 ul li img {width: 100%;}
+        .box3 ul li h3 {background: #fff; padding: 10px; margin-top: 10px;}
+        .box3 ul li p {background: #fff; padding: 10px; margin-top: 10px;}
+
+        footer {height: 100px; background: #ccc;}
+    </style>
+</head>
+<body>
+    <header>
+        이것만 헤더
+    </header>
+
+    <main>
+
+        
+        <div class="box0">
+            <ul>
+                <li>1</li>
+                <li>2
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="banner">
+            검정배너
+        </div>
+    
+        <!-- 태그하나로 묶어버려서 중앙정렬 쉽게 해주기 3개(box1,box2,box3)한테 각각 할필요없음 -->
+        <div class="inner">
+            <section class="box1">
+                <div class="top">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="box2">
+                <h2>공지사항</h2>
+                <!-- 묶어서 이동 -->
+                <div class="navi">
+                    <a href="" class="next">다음</a> 
+                    <a href="" class="pre">이전</a>
+                </div>
+                        
+            </section>
+            <section class="box3">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img.jpeg" alt=""></img>
+                            <h3>강조제목</h3>
+                            <p>설명</p>                               
+                        </a>
+                    </li>
+                    
+                </ul>          
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {background: #ccc;}
+        header {background: #000; height: 100px;}
+        main {width: 800px; margin: 10px auto;}
+        .box1 {height: 100px; background: #fff;}
+        /* 
+            1.정렬(float)
+            2.해제
+            3.위드,높이,여백
+            4.마지막자식
+        */
+        .box2 {margin-top: 10px; overflow: hidden;}
+        .box2 div {
+            float: left;
+            margin-right: 10px;
+            
+
+            width: calc((100% - 20px)/3);
+            height: 100px;
+            background: #fff;
+        }
+        .box2 div:last-child {margin-right: 0;}
+
+        .box3 {overflow: hidden; margin-top: 10px;}
+        .box3 div {
+            float: left;
+
+            width: calc((100% - 40px)/5);
+            height: 100px;
+            background: #fff;
+            margin-right: 10px;
+        }
+        .box3 div:last-child {margin-right: 0;}
+
+        .box4 {overflow: hidden; margin-top: 10px; 
+               background: #000; padding: 10px;
+        }
+        .box4 div {
+            float: left;
+            width: calc((100% - 10px)/2);
+            background: #fff;
+            margin-right: 10px;
+            height: 100px;
+        }
+        .box4 div:last-child {margin-right: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+
+    <main>
+        <div class="box1">box1</div>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="box3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="box4">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </main>
+</body>
+</html>

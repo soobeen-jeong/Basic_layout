@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0; font: inherit;}
+        body {line-height: 1;}
+        ul {list-style: none;}
+        a {text-decoration: none; color: inherit;}
+        img {display: block; max-width: 100%;}
+
+        header {background: #ccc; height: 200px; position: relative;}
+        header h1 {
+            width: 100px; height: 50px;
+            background: #fff;
+
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        header h1 a {display: block; height: 100%; }
+
+        header .sns {
+            position: absolute;
+            left: 0; background: #fff;
+            padding: 10px;
+        }
+        header .login {
+            position: absolute;
+            right: 0; background: #fff;
+            padding: 10px;
+        }
+        
+        .box1 {position: relative; height: 300px; background: #888;}
+        .box1 .btn {
+            position: absolute;
+            top: 50%;
+            background: #fff;
+            width: 50px; height: 50px;
+            transform: translateY(-50%);
+        }
+        .box1 .btn.prev {left: 10px;}
+        .box1 .btn.next {right: 10px;}
+
+        .box1 .page {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box1 span {
+            width: 30px; height: 30px; background: #fff;
+            float: left; border-radius: 50%;
+            margin: 0 5px;
+            text-align: center;
+            line-height: 2;
+            /* vertical-align: middle; */
+        }
+        .box1 .page span.active {background: #f00;}
+        
+        .box2 {margin: 100px 0;}
+        .box2 h2 {
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 50px;
+        }
+        .box2 ul {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            
+        }
+        .box2 ul li {
+            float: left;
+            width: calc((100% - 20px) / 3);
+            margin-right: 10px;
+        }
+        .box2 ul li:last-child {margin-right: 0;}
+        .box2 ul li a {
+            display: block;
+            padding: 10px;
+            background: #f00;
+        }
+        .box2 ul li img {width: 100%;}
+        .box2 ul li p {background: #fff; padding: 10px; margin-top: 10px;}
+
+        .box3 {background: #f00; padding: 100px 0;}
+        .box3 ul {width: 800px;margin: 0 auto; }
+        .box3 li {background: #fff; margin-bottom: 10px; height: 100px;}
+        .box3 li:last-child {margin-bottom: 0;}
+        
+        footer {height: 200px; background: #00f;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="">네이버</a></h1>
+        <div class="sns">sns</div>
+        <div class="login">login</div>
+    </header>
+    <main>
+        <section class="box1">
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+            <div class="page">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </section>
+        <section class="box2">
+            <h2>이벤트</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="box3">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </section>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
