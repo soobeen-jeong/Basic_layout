@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+header {
+  height: 100px;
+  background: #ccc;
+}
+
+.box1 {
+  background: #fff;
+  height: 300px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.box1 ul {
+  display: flex;
+  width: 800px;
+  margin: 10px auto;
+}
+
+.box1 ul li {
+  flex: 1;
+  width: calc((100% - 10px) / 2);
+  height: 300px;
+  background: #555;
+  margin-right: 10px;
+  position: relative;
+}
+
+.box1 ul li:last-child {
+  margin-right: 0;
+}
+
+.box1 ul li .btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.box1 ul li .btn.prev {
+  left: 10px;
+}
+
+.box1 ul li .btn.next {
+  right: 10px;
+}
+
+.banner {
+  background: #000;
+  height: 100px;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.box2 {
+  background: #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.box2 .top ul {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2 .top li {
+  width: calc(70% - 5px);
+  height: 100px;
+  background: #000;
+  margin-right: 10px;
+}
+
+.box2 .top li:last-child {
+  margin-right: 0px;
+  width: calc(30% - 5px);
+}
+
+.box2 .bottom ul {
+  background: #fff;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2 .bottom ul li {
+  width: calc(20% - 5px);
+  height: 100px;
+  background: #000;
+  margin-right: 10px;
+}
+
+.box2 .bottom li:last-child {
+  margin-right: 0px;
+  width: calc(80% - 5px);
+}
+
+.box3 {
+  background: #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box3 .navi a {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.box4 {
+  margin: 10px auto;
+}
+
+.box4 ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.box4 ul li {
+  width: calc((100% - 40px) / 4);
+}
+
+.box4 ul li a {
+  padding: 10px;
+  background: blue;
+  display: block;
+}
+
+.box4 ul li img {
+  width: 100%;
+}
+
+.box4 ul li h3 {
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.box4 ul li p {
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  height: 100px;
+  background: #ccc;
+}

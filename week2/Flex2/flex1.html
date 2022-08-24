@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body {background: #ccc;}
+        header {
+            height: 100px;
+            background: #000;
+        }
+        main{width: 800px;
+            margin: 10px auto;}
+        main > div {margin-bottom: 10px;}
+        .box1 {
+            height: 200px;
+            background: #fff;
+        }
+        /* gap */
+        .box2 {display: flex; gap: 10px;}
+        .box2 div {
+            flex: 1;
+            background: #fff;
+            height: 200px;
+        }
+        
+        /* 올빼미 */
+        .box3 {display: flex;}
+        .box3 > * + * {
+            margin-left: 10px;
+        }
+        .box3 div{
+            flex: 1;
+            height: 100px;
+            background: #fff;
+        }
+
+        .box4 {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .box4 div {
+            height: 100px;
+            background: #fff;
+            width: calc(50% - 5px);
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="box1">box1</div>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="box3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="box4">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </main>
+</body>
+</html>

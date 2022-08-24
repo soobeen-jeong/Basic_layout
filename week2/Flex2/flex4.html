@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{margin: 0;padding: 0;font: inherit;}
+        body{line-height: 1;}
+        ul{list-style: none;}
+        a{ text-decoration: none;color: inherit; }
+        img{ max-width: 100%; vertical-align: top; }
+
+
+
+
+        .box1{
+            background: #ccc;
+            line-height: 50px;
+        }
+        .box1 ul{
+            display: flex;
+            justify-content: center;
+        }
+        .box1 ul li{
+            padding: 0 10px;
+            background: #f00;
+        }
+
+
+
+
+    </style>
+
+    
+    <div class="box1">
+        <ul>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+        </ul>
+    </div>
+
+    <style>
+        .box2{
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background: #ccc;
+            margin-top: 10px;
+            display: flex;
+            box-sizing: border-box;
+        }
+        .box2 .left{
+           display: flex;
+           flex: 1;
+           gap: 10px;
+           flex-wrap: wrap;
+           margin-right: 10px;
+        }
+        .box2 .left li{
+            background: #f00;
+            height: 100px;
+            width: calc((100% - 20px)/3);
+        }
+
+        .box2 .right{
+            width: 150px;
+            background: #f00;
+        }
+    </style>
+
+    <div class="box2">
+        <ul class="left">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+        <div class="right">right</div>
+    </div>
+
+
+    <style>
+        .box3{
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+            background: #ccc;
+            margin-top: 10px;
+        }
+        .box3{}
+        .box3 li{}
+        .box3 li+li{margin-top: 10px;}
+
+        /* .box3 ul > * + * */
+
+        .box3 li a{
+            display: flex;
+        }
+        .box3 li img{
+            width: 150px;
+            height: 150px;
+        }
+        .box3 li p{
+            background: #fff;
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+    </style>
+
+    <div class="box3">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="">
+                    <p>Lorem</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque odit deleniti atque voluptatum dolores, doloribus unde optio perspiciatis ex totam, blanditiis illum aliquam aspernatur, ad earum necessitatibus illo error.</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque odit deleniti atque voluptatum dolores, doloribus unde optio perspiciatis ex totam, blanditiis illum aliquam aspernatur, ad earum necessitatibus illo error.</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque odit deleniti atque voluptatum dolores, doloribus unde optio perspiciatis ex totam, blanditiis illum aliquam aspernatur, ad earum necessitatibus illo error.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

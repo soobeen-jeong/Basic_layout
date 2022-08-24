@@ -1,41 +1,58 @@
 * {margin: 0; padding: 0;}
-body {background: #ccc;}
-header {height: 100px; background: #f00;}
-main {width: 800px; margin: 10px auto;}
+body {background: #ccc; margin: 10px 10px 10px 160px;}
+header { position: fixed;
+    top: 0; left: 0;
+    background: #f00;
+    height: 100%;
+    width: 150px;}
+main { margin: 10px auto;
+        // div {margin-bottom: 10px;} 질문: 왜 넣을 수 없는지 (따로따로 줬습니다!)
+    }
 .box1 {
-    height: 200px; background: #f00;
+    height: 100px; background: #fff;
 }
 
 .box2 {
-    display: flex; gap: 10px;
+    display: flex; gap: 10px; 
     div {
-            flex: 1;
+            flex: 1; 
             height: 200px;background: #fff;
     }
 }
 
-.box3 {
+.box5 {
     display: flex;
+        
+        div {
+            
+            height: 100px;
+            background: #fff;
+            width: 80%;
+        }
+        div:last-child {
+            width: 20%;
+        }
         > * + * {
             margin-left: 10px;
+            
         }
-        div {
-            flex: 1;
-            height: 200px;
-            background: #f00;
-        }
-    
    
 }
 
-.box4 {
-    padding: 10px;
-    background: #00f;
+.box6 {
     display: flex;
     justify-content: space-between;
     div {
-        width: calc(50% - 5px);
-        height: 200px;
+        width: calc(30% - 5px);
+        height: 100px;
         background: #fff;
     }
+    div:last-child {
+        width: calc(70% - 5px);
+    }
 }
+
+
+.box1, .box3, .box4, .box7 {height: 100px; background: #fff; margin-bottom: 10px;}
+.box2, .box5, .box6 {margin-bottom: 10px;}
+       

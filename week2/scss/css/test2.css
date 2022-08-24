@@ -5,21 +5,25 @@
 
 body {
   background: #ccc;
+  margin: 10px 10px 10px 160px;
 }
 
 header {
-  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #f00;
+  height: 100%;
+  width: 150px;
 }
 
 main {
-  width: 800px;
   margin: 10px auto;
 }
 
 .box1 {
-  height: 200px;
-  background: #f00;
+  height: 100px;
+  background: #fff;
 }
 
 .box2 {
@@ -32,26 +36,40 @@ main {
   background: #fff;
 }
 
-.box3 {
+.box5 {
   display: flex;
 }
-.box3 > * + * {
+.box5 div {
+  height: 100px;
+  background: #fff;
+  width: 80%;
+}
+.box5 div:last-child {
+  width: 20%;
+}
+.box5 > * + * {
   margin-left: 10px;
 }
-.box3 div {
-  flex: 1;
-  height: 200px;
-  background: #f00;
-}
 
-.box4 {
-  padding: 10px;
-  background: #00f;
+.box6 {
   display: flex;
   justify-content: space-between;
 }
-.box4 div {
-  width: calc(50% - 5px);
-  height: 200px;
+.box6 div {
+  width: calc(30% - 5px);
+  height: 100px;
   background: #fff;
+}
+.box6 div:last-child {
+  width: calc(70% - 5px);
+}
+
+.box1, .box3, .box4, .box7 {
+  height: 100px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.box2, .box5, .box6 {
+  margin-bottom: 10px;
 }
