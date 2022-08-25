@@ -1,0 +1,138 @@
+@import './reset';
+header {
+    background: #000;
+    height: 100px;
+}
+.banner {
+    margin-top: 10px;
+    background: #000;
+    height: 100px;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 800px;
+    margin: 10px auto;
+}
+
+.box1 {
+    box-sizing: border-box;
+    ul {
+        height: 300px;
+        display: flex;
+        gap: 10px;
+
+    }
+    li {
+        flex: 1;
+        background: #555;
+        position: relative;
+        
+    }
+    .btn {
+        position: absolute;
+        top: 50%; width: 50px; height: 50px;
+        background: #fff;
+        transform: translateY(-50% );
+    }
+    .btn.prev {
+        left: 10px;
+    }
+    .btn.next {
+       right: 10px;
+    }
+
+
+}
+.box2 {
+    background: #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.top {
+    background: #fff;
+    padding: 10px;
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+    li {
+        background: #333;
+        height: 100px;
+        width: calc(70%);
+    }
+    li:last-child {
+        width: calc(30%);
+    }
+}
+.bottom {
+    background: #fff;
+    padding: 0 10px 10px 10px;
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+    li {
+        background: #333;
+        height: 100px;
+        width: calc(20%);
+    }
+    li:last-child {
+        width: calc(80%);
+    }
+}
+
+.box3 {
+    background: #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        padding: 10px;
+        height: 50px;
+        background: #fff;
+        border: 1px solid black;
+        
+    }
+}
+
+.box4 {
+    box-sizing: border-box;
+    ul {
+        
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    li {
+        width: calc((100% - 30px)/4);
+        
+    }
+    
+
+    a {
+        flex: 1;
+        display: block;
+        padding: 10px;
+        background: #00f;
+        
+    }
+    img {
+        height: 202px;
+        width: 192px;
+    }
+    h3 {
+        background: #fff;
+        height: 30px;
+        margin: 10px 0;
+    }
+    p {
+        background: #fff;
+        height: 30px;
+    }
+}

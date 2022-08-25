@@ -1,0 +1,119 @@
+@import './reset';
+
+header {
+    background: #888;
+    height: 200px;
+    position: relative;
+    h1 {
+        position: absolute;
+        left: 50%;top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    a {
+        display: block;
+        background: #fff;
+        padding: 10px;
+        
+    }
+    .sns {
+        position: absolute;
+        left: 0;
+        background: #fff;
+        padding: 10px;
+    }
+    .login {
+        position: absolute;
+        right: 0;
+        background: #fff;
+        padding: 10px;
+    }
+
+}
+
+.box1 {
+    position: relative;
+    background: #ccc;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    .btn.prev {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        background: #fff;
+        padding: 10px;
+    }
+    .btn.next {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .page {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        gap: 10px;
+        // left: 50%;
+        // transform: translateX(-50%);
+       
+        
+    }
+    span {
+        display: block;
+        background: #fff;
+        border-radius: 50%;
+        width: 30px;height: 30px;
+        
+    }
+    .active {
+        background: #00f;
+    }
+}
+
+.box2 {
+    width: 800px;
+    margin: 10px auto;
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+    }
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+    a {
+        flex: 1;
+        padding: 10px;
+        background: #000;
+        display: block;
+    }
+    img {
+        height: 300px;
+    };
+    p {
+        background: #fff;
+        height: 30px;
+    }
+}
+
+.box3 {
+    background: #888;
+    padding: 100px 0;
+    ul {
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+       flex-direction: column;
+        gap: 10px;
+    }
+    li {
+        background: #fff;
+        flex-basis: 100px;
+    }
+}

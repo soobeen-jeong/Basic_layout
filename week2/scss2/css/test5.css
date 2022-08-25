@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+header {
+  background: #000;
+  height: 100px;
+}
+
+.banner {
+  margin-top: 10px;
+  background: #000;
+  height: 100px;
+}
+
+.box1, .box2, .box3, .box4 {
+  width: 800px;
+  margin: 10px auto;
+}
+
+.box1 {
+  box-sizing: border-box;
+}
+.box1 ul {
+  height: 300px;
+  display: flex;
+  gap: 10px;
+}
+.box1 li {
+  flex: 1;
+  background: #555;
+  position: relative;
+}
+.box1 .btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+.box1 .btn.prev {
+  left: 10px;
+}
+.box1 .btn.next {
+  right: 10px;
+}
+
+.box2 {
+  background: #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.top {
+  background: #fff;
+  padding: 10px;
+}
+.top ul {
+  display: flex;
+  gap: 10px;
+}
+.top li {
+  background: #333;
+  height: 100px;
+  width: 70%;
+}
+.top li:last-child {
+  width: 30%;
+}
+
+.bottom {
+  background: #fff;
+  padding: 0 10px 10px 10px;
+}
+.bottom ul {
+  display: flex;
+  gap: 10px;
+}
+.bottom li {
+  background: #333;
+  height: 100px;
+  width: 20%;
+}
+.bottom li:last-child {
+  width: 80%;
+}
+
+.box3 {
+  background: #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.box3 a {
+  padding: 10px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid black;
+}
+
+.box4 {
+  box-sizing: border-box;
+}
+.box4 ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.box4 li {
+  width: calc((100% - 30px) / 4);
+}
+.box4 a {
+  flex: 1;
+  display: block;
+  padding: 10px;
+  background: #00f;
+}
+.box4 img {
+  height: 202px;
+  width: 192px;
+}
+.box4 h3 {
+  background: #fff;
+  height: 30px;
+  margin: 10px 0;
+}
+.box4 p {
+  background: #fff;
+  height: 30px;
+}

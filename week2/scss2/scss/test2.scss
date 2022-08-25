@@ -1,0 +1,58 @@
+@import './reset';
+
+header {
+    position: fixed;
+    left: 0; right: 0;
+    height: 100%;
+    width: 150px;
+    background: #000;
+}
+
+body {
+    padding: 10px 10px 10px 160px;
+    background: #ccc;
+    
+}
+main > div {
+    margin-bottom: 10px;
+}
+
+.box1, .box3, .box4, .box7 {
+    background: #fff;
+    height: 100px;
+}
+.box2 {
+    display: flex;
+    gap: 10px;
+    div {
+        flex: 1;
+        background: #fff;
+        height: 100px;
+    }
+}
+.box5 {
+    display: flex;
+    gap: 10px;
+    div {
+        width: calc(80%);
+        background: #fff;
+        height: 100px;
+    }
+    div:last-child {
+        width: calc(20%);
+    }
+}
+
+.box6 {
+    display: flex;
+    gap: 10px;
+    div {
+        width: calc(30%);
+        background: #fff;
+        height: 100px;
+    }
+    div:last-child {
+        width: calc(70%);
+    }
+}
+

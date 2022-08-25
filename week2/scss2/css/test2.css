@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 150px;
+  background: #000;
+}
+
+body {
+  padding: 10px 10px 10px 160px;
+  background: #ccc;
+}
+
+main > div {
+  margin-bottom: 10px;
+}
+
+.box1, .box3, .box4, .box7 {
+  background: #fff;
+  height: 100px;
+}
+
+.box2 {
+  display: flex;
+  gap: 10px;
+}
+.box2 div {
+  flex: 1;
+  background: #fff;
+  height: 100px;
+}
+
+.box5 {
+  display: flex;
+  gap: 10px;
+}
+.box5 div {
+  width: 80%;
+  background: #fff;
+  height: 100px;
+}
+.box5 div:last-child {
+  width: 20%;
+}
+
+.box6 {
+  display: flex;
+  gap: 10px;
+}
+.box6 div {
+  width: 30%;
+  background: #fff;
+  height: 100px;
+}
+.box6 div:last-child {
+  width: 70%;
+}
