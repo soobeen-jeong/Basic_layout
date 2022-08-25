@@ -20,6 +20,9 @@ header {
 main {
   margin: 10px auto;
 }
+main > div {
+  margin-bottom: 10px;
+}
 
 .box1 {
   height: 100px;

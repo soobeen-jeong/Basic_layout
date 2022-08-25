@@ -6,7 +6,7 @@ header { position: fixed;
     height: 100%;
     width: 150px;}
 main { margin: 10px auto;
-        // div {margin-bottom: 10px;} 질문: 왜 넣을 수 없는지 (따로따로 줬습니다!)
+        > div {margin-bottom: 10px;} 
     }
 .box1 {
     height: 100px; background: #fff;
