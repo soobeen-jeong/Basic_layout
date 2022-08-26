@@ -1,0 +1,141 @@
+@import './reset.css';
+@import './common.css';
+/* 헤더, 푸터,container  */
+
+.header {}
+.header .group-flex1 {
+    width: 1130px; height: 160px;
+    /* background: #f00; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .logo {
+    width: 222px; height: 52px; 
+    background-position: 0 -158px;
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+.header .logo a{display: block; height: 100px;}
+
+.header .search-area {
+    width: 582px;
+    height: 52px;
+    border: 2px solid #19ce60;
+    border-radius: 2px;
+    /* position: relative; */
+    
+    position: absolute;
+    top: 50%;
+    left: 268px;
+    margin-top: -28px;
+}
+
+.header .search-area .input-text{
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+.header .search-area .btn-submit{
+    width: 56px;height: 56px;
+    background: #19ce60;
+    position: absolute;
+    top: -2px; right: -2px;
+    border-radius: 0px 3px 3px 0;
+}
+
+.header .search-area .btn-submit::after {
+    width: 22px;height: 22px;
+    content: '';
+    display: inline-block;
+    background-position: -420px 0;
+}
+.header .service-area {
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.header .service-area > * {
+    /* background: #f00; */
+    float: left;
+}
+.header .service-area .bar {
+    width: 1px;height: 10px;
+    background: #ccc ;
+    margin: 3px 7px;
+}
+.header .service-area .link-start {}
+.header .service-area .link-start::after {
+    width: 26px;height: 26px;
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    background-position:-308px -345px;
+    margin: -3px 0 0 3px;
+}
+.header .service-area .link-junior::after {
+    content: '';
+    display: inline-block;
+    background-position:-262px -330px;
+    margin: 3px;
+    width: 60px; height: 10px;
+}
+.header .service-area .link-bin::after {
+    content: '';
+    display: inline-block;
+    background-position:-369px -299px;
+    margin: 3px 3px 2px;
+    width: 33px; height: 11px;
+}
+
+
+
+.header .group-flex2 {
+    border-top: 1px solid #e4e8eb;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.header .group-flex2 .inner {
+    width: 1130px;
+    margin: 0 auto;
+
+}
+.header .group-flex2 .inner::after{content: '';clear: both;display: block;}
+.header .gnb-area {float: left;}
+.header .gnb-area .gnb-list {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 52px;
+    color: #19ce60;
+    
+}
+.header .gnb-area .gnb-item {float: left; }
+.header .gnb-area .gnb-item + .gnb-item {margin-left: 12px;}
+
+.header .weather-area {float: right;}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+    padding: 20px 0;
+    /* overflow: hidden; */
+}
+
+.container::after{content: '';clear: both;display: block;}
+/* 
+.clear {
+    clear: both;
+} */
+.footer {
+    background: #00f;
+    height: 100px;
+}

@@ -1,0 +1,35 @@
+@import './reset';
+
+header {
+    background: #f00;
+    height: 100px;
+}
+
+.banner {
+    background: #f00;
+    height: 100px;
+}
+
+.box1, .box2, .box3 {width: 800px; margin: 10px auto;}
+.box1{
+    
+    ul {
+        background: #ccc;
+        display: flex;
+        gap: 10px;
+        
+        
+        li {
+            width: calc((100% - 20px)/3);
+            height: 300px;
+        }
+
+    }
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    background: #ccc;
+    .left {}
+}
