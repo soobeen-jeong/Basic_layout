@@ -9,7 +9,9 @@ body {
 /* 공용 화장실 */
 .header .logo, 
 .header .search-area .btn-submit::after,
+.sc-news .group-title .set-area .btn-set::after,
 .header .service-area > *:after,
+.sc-timesquare .nav-wrap .btn-nav::after,
 .sc-news .group-issue .issue-area > *:after {
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
