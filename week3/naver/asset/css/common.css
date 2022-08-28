@@ -12,10 +12,30 @@ body {
 .sc-news .group-title .set-area .btn-set::after,
 .header .service-area > *:after,
 .sc-timesquare .nav-wrap .btn-nav::after,
-.sc-news .group-issue .issue-area > *:after {
+.sc-news .group-issue .issue-area > *:after,
+.group-title .info-area .btn-set::before,
+.media-area .media-thumb .play,
+.btn-wrap .btn-more .more,
+.notice-area .service::after,
+.btn-box .icon .prev::before,
+.btn-box .icon .next:before {
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
+}
+
+.theme-item .ad-mark {
+    background-image: url(../images/sp-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100px 90px;
+}
+
+.tab .title::before, .tab .title::after,
+.btn-box .icon .prev::before,
+.btn-box .icon .next:before {
+    background-image: url(../images/sp-bg3.png);
+    background-repeat: no-repeat;
+    background-size: 107px 101px;
 }
 
 .blind {
