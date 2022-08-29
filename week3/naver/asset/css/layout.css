@@ -370,6 +370,9 @@ display: inline-block;
     float: left;
     padding: 2px 4px;
 }
+/* .theme-item .ad-mark a {
+    display: block;
+}  질문: a 태그로 만들려고 했으나 자꾸 깨져서 안됨 */
 
 .media-view {
     padding: 18px 0 0 0;
@@ -505,10 +508,13 @@ text-decoration: underline;
 *
 * */
 
+
 .tab {
     padding: 29px 0 13px;
     line-height: 17px;
+    
 }
+
 .tab::after{content: '';clear: both;display: block;}
 .tab .title {
     float: left;
@@ -572,7 +578,8 @@ text-decoration: underline;
     overflow: hidden;
     padding: 12px 4px 11px 10px;
     background-color: #f7f9fa;
-    border: 1px solid #dae1e6;
+    border-bottom: 1px solid #dae1e6;
+    
 }
 .shop-area .shop-group::after {
     content: "";
@@ -609,7 +616,7 @@ text-decoration: underline;
 
 .group-goods {
     position: relative;
-    border: 1px solid #dae1e6;
+    border-bottom: 1px solid #e4e8eb;
     padding: 55px 8px 20px;
     border-top: 0;
 }
@@ -686,7 +693,7 @@ margin-right: 0;
     
     
 }
-.goods-items .img:nth-child(n-3) {
+.goods-items .img:nth-child(-n+3) {
     margin-top: 0;
 }
 .goods-items .wrap {
@@ -703,7 +710,7 @@ margin-right: 0;
    
     
 }
-.goods-items .wrap .thumb-bd {
+.goods-items a .thumb-bd {
     position: absolute;
     top: 0;
     left: 0;
@@ -730,15 +737,129 @@ margin-right: 0;
     font-weight: bold;
     
 }
+.goods-items .info .title:hover {
+    text-decoration: underline;
+}
 
+.shop-area {
+    border: 1px solid #e4e8eb;
+}
+.group-event {
+    
+    border-top: 0;
+    margin: 0 8px;
+    padding: 19px 0 17px;
+    
+}
 
+.group-event .shop-title {
+    position: relative;
+    padding-left: 5px;
+    
+    
+}
 
+.shop-title .title {
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+}
+.shop-title .control-box {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    text-align: right;
+    
+    line-height: 29px;
+    
+}
+.shop-title .control-box .num-box {
+    float: left;
+    line-height: 29px;
+    color: grey;
+}
+.shop-title .control-box span {
+    line-height: 29px;
+    color: grey;
+}
+.shop-title .control-box strong {
+    margin-right: 4px;
+    color: #202020;
+    font-weight: bold;
+    
+}
+.shop-title .icon {
+    overflow: hidden;
+    float: left;
+    margin-left: 9px;
+}
+.shop-title .icon .prev {
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dae1e6;
+}
+.shop-title .icon .prev::before {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -93px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 9px 12px 9px 10px;
+}
+.shop-title .icon .next {
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dae1e6;
+    border-left: 0;
+}
+.shop-title .icon .next::before {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -79px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 9px 10px 9px 12px;
+}
 
+.group-event .list-news {
+    margin: 13px 5px 0;
+    line-height: 28px;
+    
+    
+    
+}
+.list-news li:first-child {
+   padding-top: 16px;
+}
+/* 위에 질문: first 쓰고싶지 않았으나 자꾸 깨져서 강제로 썼습니다. 왜 깨지는 건가요? */
 
-
-
-
-
+.list-news li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #202020;
+}
+.list-news a::before {
+    background-color: #1ace61;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: top;
+    content: '';
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+.list-news em {
+    font-weight: bold;
+    margin: 0 13px 0 0;
+}
 
 /* *
 *s

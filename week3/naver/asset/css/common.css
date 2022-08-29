@@ -16,9 +16,7 @@ body {
 .group-title .info-area .btn-set::before,
 .media-area .media-thumb .play,
 .btn-wrap .btn-more .more,
-.notice-area .service::after,
-.btn-box .icon .prev::before,
-.btn-box .icon .next:before {
+.notice-area .service::after {
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
@@ -32,7 +30,9 @@ body {
 
 .tab .title::before, .tab .title::after,
 .btn-box .icon .prev::before,
-.btn-box .icon .next:before {
+.btn-box .icon .next:before,
+.shop-title .icon .prev::before,
+.shop-title .icon .next::before {
     background-image: url(../images/sp-bg3.png);
     background-repeat: no-repeat;
     background-size: 107px 101px;
