@@ -758,6 +758,7 @@ margin-right: 0;
     
     
 }
+.group-event .shop-title::after{content: '';clear: both;display: block;}
 
 .shop-title .title {
     font-size: 13px;
@@ -832,9 +833,9 @@ margin-right: 0;
     
     
 }
-.list-news li:first-child {
+/* .list-news li:first-child {
    padding-top: 16px;
-}
+} */
 /* 위에 질문: first 쓰고싶지 않았으나 자꾸 깨져서 강제로 썼습니다. 왜 깨지는 건가요? */
 
 .list-news li a {
