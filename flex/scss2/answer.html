@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;font: inherit;}
+        body{line-height: 1;}
+        ul{list-style: none;}
+        a{text-decoration: none;color: inherit;}
+        img{vertical-align: top;max-width: 100%;}
+
+
+        header{
+            background: #f00;
+            height: 100px;
+        }
+        main{
+           
+        }
+
+        .box1{
+            width: 800px;
+            margin: 10px auto;
+            position: relative;
+            display: flex;
+            gap: 10px;
+        }
+        .box1 .slide{
+            flex: 1;
+            height: 300px;
+            background: #ccc;
+        }
+        .box1 .btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;height: 50px;
+            background: #f00;
+        }
+        .box1 .btn.prev{left: 10px;}
+        .box1 .btn.next{right: 10px;}
+        .box1 .page{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box1 .page span{
+            float: left;
+            width: 30px;
+            height: 30px;
+            background: #999;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        .box1 .page span.active{
+            background: #f00;
+        }
+
+
+        .bar{
+            height: 100px;
+            background: #f00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+
+    <main>
+        <section class="box1">
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+            <div class="page">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </section>
+        <div class="bar">긴배너</div>
+
+
+        <style>
+            .inner{
+                width: 800px;
+                margin: 10px auto;
+            }
+            .box2{display: flex;justify-content: space-between;
+                background: #ccc;
+                padding: 10px;
+            }
+            .box2 > a{
+                line-height: 40px;
+            }
+            .box2 .cate{
+                display: flex;
+                gap: 10px;;
+            }
+            .box2 .cate a{
+                width: 40px;
+                height: 40px;
+                background: #f00;
+            }
+        </style>
+
+        <div class="inner">
+            <section class="box2">
+                <a href="">쇼핑</a>
+                <div class="cate">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                </div>
+            </section>
+
+
+            <style>
+                .box3{
+                    display: flex;
+                    padding: 10px;
+                    background: #ccc;
+                    margin-top: 10px;
+                }
+                .box3 .left{flex: 1; 
+                    background: #fff;
+                    padding: 10px;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .box3 .left div{
+                    background: #f00;
+                    flex: 1;
+                }
+
+
+                .box3 .right{flex: 1;}
+                .box3 .right{
+                    display: flex;
+                    padding: 10px;
+                    margin-left: 10px;
+                    background: #fff;
+                    gap: 10px;;
+                }
+                .box3 .right div{
+                    flex: 1;
+                    height: 200px;
+                    background: #f00;
+                }
+            </style>
+
+            <section class="box3">
+                <div class="left">
+                    <div>1</div>
+                    <div>2</div>
+                </div>
+                <div class="right">
+                    <div>1</div>
+                    <div>2</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
