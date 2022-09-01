@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <style>
+        header {background: #f00; height: 100px;}
+        .banner {background: #f00; height: 100px;}
+        .box1 {
+            width: 800px; margin: 10px auto;
+            display: flex;
+            gap: 10px;
+            position: relative;
+        }
+        .box1 div {
+            background: #ccc;
+            height: 300px;
+            flex: 1;
+        }
+        .box1 .btn {
+            position: absolute;
+            top: 50%;
+            background: #f00;
+            transform: translateY(-50%);
+            padding: 10px;
+        }
+        .box1 .prev {left: 10px; }
+        .box1 .next {right: 10px;}
+        main {width: 800px; margin: 10px auto;}
+
+        .box1 .page {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+           
+        }
+        .box1 .page span {
+            width: 30px;height: 30px;
+            background: #555;
+            border-radius: 50%;
+            margin: 10px;
+            float: left;
+        }
+        .box1 .page span .active {
+            background: #f00;
+        }
+        .box2 {
+            background: #ccc;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            
+        }
+        .box2 h2 {line-height: 40px;}
+        .box2 .nav {
+            display: flex;
+            gap: 10px;
+            
+        }
+        .box2 .nav div {background: #f00; flex: 1; padding: 10px; }
+
+        .box3 {
+            background: #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        .box3 .left {
+            background: #fff;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            margin-right: 10px;
+           
+            flex: 1;
+        }
+        .box3 .left div {background: #f00; flex: 1;
+        }
+        .box3 .right {
+            background: #fff;
+            padding: 10px;
+            flex: 1;
+            height: 100px;
+            display: flex;
+            gap: 10px;
+        }
+        .box3 .right div {background: #f00; flex: 1;}
+    </style>
+    <header>header</header>
+    <div class="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <a href="" class="btn prev">prev</a>
+        <a href="" class="btn next">next</a>
+        <a href="" class="page">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+        </a>
+    </div>
+    <div class="banner">banner</div>
+    <main>
+        <div class="box2">
+            <h2>쇼핑</h2>
+            <div class="nav">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="left">
+                <div>1</div>
+                <div>2</div>
+            </div>
+            <div class="right">
+                <div>1</div>
+                <div>2</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

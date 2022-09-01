@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <style>
+        header {
+            height: 100px;
+            background: #000;
+        }
+        .box1 {
+            width: 800px;
+            margin: 10px auto;
+            display: flex;
+            gap: 10px;
+            
+        }
+        .box1 div {
+            background: #888;
+            flex: 1;
+            height: 300px;
+            position: relative;
+        }
+
+        .box1 div .btn {
+            position: absolute;
+            top: 50%; 
+            transform: translateY(-50%);
+        }
+        .box1 div .prev {left: 10px;}
+        .box1 div .next {right: 10px;}
+
+        .banner {
+            height: 100px;
+            background: #000;
+        }
+        .inner {
+            width: 800px;
+            margin: 10px auto;
+        }
+        .box2 {
+            background: #ccc;
+            padding: 10px;
+            
+        }
+        .box2 .top {
+            background: #fff;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+        .box2 .top div {
+            
+            background: #000;
+            height: 100px;
+            width: calc(70%);
+        }
+        .box2 .top div:last-child {width: calc(30%); flex: 1;}
+        .box2 .bottom {
+            background: #fff;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            padding-top: 0;
+        }
+        .box2 .bottom div {
+            
+            background: #000;
+            height: 100px;
+            width: calc(20%);
+        }
+        .box2 .bottom div:last-child {width: calc(80%); flex: 1;}
+
+        .box3 {
+            background: #ccc;
+            display: flex;
+            justify-content: space-between;
+            line-height: 50px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .box3 h2 {}
+        .box3 .btn {
+            
+        }
+        .box3 .prev {background: #fff;
+            border: 1px solid black; padding: 10px;}
+        .box3 .next {background: #fff;
+            border: 1px solid black; padding: 10px;}
+
+        .box4 {
+            background: #fff;
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            
+        }
+        .box4 li {
+            
+            width: calc((100% - 30px)/4);
+            
+            
+        }
+     
+        .box4 a {
+            background: #00f;
+            padding: 10px;
+            display: block;
+        }
+        .box4 img {}
+        .box4 h2 {
+            background: #fff;
+            margin-top: 10px;
+            height: 30px;
+            
+        }
+        .box4 p {
+            background: #fff;
+            margin-top: 10px;
+            height: 30px;
+        }
+        
+    </style>
+    <header>header</header>
+    <div class="box1">
+        <div>1</div>
+        <div>2
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+        </div>
+    </div>
+    <div class="banner">banner</div>
+    <div class="inner">
+    <div class="box2">
+        <div class="top">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="bottom">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </div>
+    <div class="box3">
+        <h2>공지사항</h2>
+        <div class="btn">
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+        </div>
+    </div>
+    <ul class="box4">
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./img.jpeg" alt="">
+                <h2>제목</h2>
+                <p>설명</p>
+            </a>
+        </li>
+    </ul>
+    </div>
+</body>
+</html>

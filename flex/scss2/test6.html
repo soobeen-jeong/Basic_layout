@@ -8,48 +8,150 @@
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
+    <style>
+        header {
+            background: #f00;
+            height: 100px;
+        }
+        .banner {
+            background: #f00;
+            height: 100px;
+        }
+        .box1 {
+            width: 800px;
+            margin: 10px auto;
+            
+            display: flex;
+            gap: 10px;
+            position: relative;
+        }
+        .mini {
+            height: 300px;
+            background: #ccc;
+            flex: 1;
+        }
+        
+        .box1 .btn {
+            
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; height: 50px;
+            background: #f00;
+        }
+
+        .box1 .btn.prev {left: 10px;}
+        .box1 .btn.next {right: 10px;}
+        .page {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .page span {
+            float: left;
+            height: 30px;width: 30px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 5px;
+        }
+        .inner {
+            width: 800px;
+            margin: 10px auto;
+        }
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+            background: #ccc;
+            
+            padding: 10px;
+            line-height: 50px;
+        }
+        .box2 h2 {
+          
+        }
+        .box2 .num {
+            display: flex;
+            gap: 10px;
+            
+        }
+        .box2 .num a {
+            width: 30px; height: 30px;
+            background: #f00;
+           
+            padding: 10px;
+            line-height: 50px;
+        }
+
+        .box3 {
+            background: #ccc;
+            display: flex;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .box3 .left {
+            background: #fff;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            
+        }
+        .box3 .left div {
+            background: #f00;
+            flex: 1;
+            
+        }
+        .box3 .right {
+            background: #fff;
+            padding: 10px;
+           display: flex;
+           gap: 10px;
+           margin-left: 10px;
+           flex: 1;
+        }
+        .box3 .right div {
+            background: #f00;
+            flex: 1;
+            height: 200px;
+        }
+    </style>
     <header>header</header>
     <main>
         <div class="box1">
-            <ul>
-                <li>
-                    <a href="prev">prev</a>
-                </li>
-                <li>2
-                    <ul class="page">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                </li>
-                <li>3
-                    <a href="prev">prev</a>
-                </li>
-            </ul>
+            <div class="mini">1</div>
+            <div class="mini">2</div>
+            <div class="mini">3</div>
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+            <div class="page">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
         </div>
         <div class="banner">banner</div>
-        <div class="box2">
-            <h2>쇼핑</h2>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-        <div class="box3">
-            <div class="left">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                </ul>
+        <div class="inner">
+            <div class="box2">
+                <h2>쇼핑</h2>
+                <div class="num">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                </div>
             </div>
-            <div class="right">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                </ul>
-            </div>
-        </div>
+            <seciton class="box3">
+                <div class="left">
+                    <div>1</div>
+                    <div>2</div>
+                </div>
+                <div class="right">
+                    <div>1</div>
+                    <div>2</div>
+                </div>
+            </seciton>
+    </div>
     </main>
 </body>
 </html>

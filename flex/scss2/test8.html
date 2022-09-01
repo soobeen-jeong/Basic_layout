@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header .top {
+            height: 200px;
+            background: #000;
+            position: relative;
+        }
+        .top h2 {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+        }
+        .top h2 a {display: block; padding: 10px;}
+
+        .sns {
+            position: absolute;
+            left: 0;
+            background: #fff;
+            padding: 10px;
+            display: block;
+        }
+        .login {
+            position: absolute;
+            right: 0;
+            background: #fff;
+            padding: 10px;
+            display: block;
+        }
+        .bottom {
+            background: #ccc;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom .wrap {
+            display: flex;
+            background: #f00;
+            
+            vertical-align: top;
+            
+           
+            
+        }
+        .bottom .wrap .menu {
+            display: block;  padding: 10px;
+            
+        }
+
+        main {
+            width: 800px;
+            margin: 10px auto;
+        }
+        .box1 {
+            background: #ccc;
+            padding: 10px;
+            
+        }
+        .box1 .top {
+            background: #fff;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .box1 .bottom  {
+            background: #fff;
+            padding: 10px;
+        }
+        .box1 .bottom .left {
+            width: calc(100% - 160px);
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+           
+        }
+        .box1 .bottom .left div {
+            height: 100px;
+            width: calc((100% - 20px)/3);
+            background: #000;
+        }
+        .box1 .bottom .right {
+            width: 150px;
+            height: 210px;
+            background: #000;
+            margin-left: 10px;
+        }
+        
+        .box2 {
+            background: #ccc;
+           
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        
+        .box2 a {
+            display: flex;
+            gap: 10px;
+            
+            
+        }
+        .box2 li + li {
+            margin-top: 10px;
+        }
+        .box2 img {
+            width: 150px; height: 150px;
+        }
+        .box2 p {
+            background: #fff;
+            width: calc(100% - 160px);
+        }
+    </style>
+    <header>
+        <div class="top">
+            <h2><a href="">네이버</a></h2>
+            <a href="" class="sns">sns</a>
+            <a href="" class="login">login</a>
+        </div>
+        <div class="bottom">
+            <div class="wrap">
+                <a href="" class="menu">메뉴1</a>
+                <a href="" class="menu">메뉴2</a>
+                <a href="" class="menu">메뉴3</a>
+                <a href="" class="menu">메뉴4</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="box1">
+            <div class="top">top</div>
+            <div class="bottom">
+                <div class="left">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+                <div class="right">right</div>
+            </div>
+        </div>
+        <div class="box2">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>Lorem</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>Lorem</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>Lorem</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpeg" alt="">
+                        <p>Lorem</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
